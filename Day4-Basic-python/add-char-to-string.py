@@ -25,6 +25,20 @@ if __name__ == "__main__":
     c = input().strip()
     s = input().strip()
     addChar(c, s)
+
+
+class solution:
+    def addChar(self, c, s):
+        return c + s + c
+
+if __name__ == "__main__":
+    c = input().strip()
+    s = input()
+    
+    sol = solution()
+    result = sol.addChar(c, s)
+    
+    print(result)
     
 # Complexity Analysis
 # Time Complexity: O(n)  

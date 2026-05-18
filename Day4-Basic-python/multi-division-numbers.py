@@ -13,6 +13,24 @@ def main():
         
 if __name__ == "__main__":
     main()
+
+def computeResults(num1, num2):
+    result = [f"{num1 * num2:.2f}"]
+
+    if num2 != 0:
+        result.append(f"{num1 / num2:.2f}")
+    else:
+        result.append("Undefined")
+
+    return result
+
+if __name__ == "__main__":
+    num1, num2 = map(float, input().split())
+
+    result = computeResults(num1, num2)
+
+    for value in result:
+        print(value)                                       
     
 # Complexity Analysis
 # Time Complexity: O(1)  
